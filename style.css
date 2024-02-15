@@ -1,21 +1,16 @@
-Body {
-  background-image: url("https://images.pexels.com/photos/326612/pexels-photo-326612.jpeg?auto=compress&cs=tinysrgb&w=600");
-
-  /* Full height */
-  height: 100vh;
-
-  /* Center and scale the image nicely */
-  background-repeat: no-repeat;
-  background-size: cover;
+* {
+  margin: 0;
+  padding: 0;
 }
 .box {
-  width: 50%;
+  background-image: url(https://images.pexels.com/photos/326612/pexels-photo-326612.jpeg?auto=compress&cs=tinysrgb&w=600);
   position: absolute;
   text-align: center;
-  top: 50%;
-  left: 50%;
   text-transform: uppercase;
-  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
   color: #f50707;
 }
 button {
@@ -23,6 +18,13 @@ button {
   border: 5px solid #63c720bb;
   border-radius: 10px;
   font-size: 30px;
+}
+.inner-box {
+  position: relative;
+  width: 50vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .yes {
   margin-right: 20px;
