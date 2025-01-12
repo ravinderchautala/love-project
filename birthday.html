@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Vyshnavi</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+        color: #980000;
+        text-align: center;
+      }
+
+      .container {
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-top: 30px;
+        color: #980000;
+      }
+
+      p {
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .card {
+        background-color: #fde7e7;
+        border: 2px solid #980000;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+
+      button {
+        background-color: #980000;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #c71515;
+      }
+
+      #surprise {
+        margin-top: 20px;
+      }
+
+      #surprise img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Happy Birthday Vyshnavi! 🎉</h1>
+      <p>You make the world a better place with your kindness and love.</p>
+      <div class="card">
+        <p>
+          Wishing you a day filled with laughter, surprises, and joy. Have the
+          most wonderful birthday ever!
+        </p>
+      </div>
+      <button id="surpriseBtn">Click for a Surprise 🎁</button>
+      <div id="surprise" class="hidden">
+        <img
+          src="./images/WhatsApp Image 2025-01-13 at 12.48.25 AM.jpeg"
+          alt="Happy Birthday Vyshnavi"
+        />
+        <p>Here’s to another year of being awesome! 🌟</p>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById('surpriseBtn')
+        .addEventListener('click', function () {
+          const surprise = document.getElementById('surprise');
+          surprise.classList.toggle('hidden');
+          this.textContent = surprise.classList.contains('hidden')
+            ? 'Click for a Surprise 🎁'
+            : 'Hide the Surprise 🎁';
+        });
+    </script>
+  </body>
+</html>
